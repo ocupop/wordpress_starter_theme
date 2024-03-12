@@ -2,13 +2,8 @@
 
 <body <?php body_class(); ?>>
 
-<header id="header" class=' sticky top-0 bg-white z-50'><?php echo ABSPATH; ?>
-<?php
-if(file_exists(ABSPATH . 'wp-settings.php')) {
-    echo "<blockquote>YES FILE EXISTS</blockquote>";
+<header id="header" class=' sticky top-0 bg-white z-50'>
 
-}
-?>
   <a href="#main" class="screen-reader-shortcut">Skip to main content</a>
   <div class='container py-4'>
     <div class='flex flex-row justify-between'>
