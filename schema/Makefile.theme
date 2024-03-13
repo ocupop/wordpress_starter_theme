@@ -1,0 +1,22 @@
+theme-init:
+	@echo "\033[0;32mINSTALL SOME PLUGINS.\033[0m"
+	wp plugin install advanced-custom-fields --activate
+	wp plugin install better-search-replace --activate
+	wp plugin install broken-link-checker --activate
+	wp plugin install enable-media-replace --activate
+	wp plugin install formidable --activate
+	wp plugin install google-analytics-for-wordpress
+	wp plugin install regenerate-thumbnails --activate
+	wp plugin install sucuri-scanner --activate
+	wp plugin install updraftplus --activate
+	wp plugin install wp-super-cache --activate
+	wp plugin install wordpress-seo
+
+	wp plugin delete hello
+	wp plugin delete askimet
+
+	wp theme install twentytwentyfour
+
+	wp theme delete twentytwentytwo
+	wp theme delete twentytwentythree
+
