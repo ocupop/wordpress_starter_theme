@@ -1930,6 +1930,10 @@ body.scrolling-down header#header {
   border-bottom-width:1px;
 }
 
+.border-t-4{
+  border-top-width:4px;
+}
+
 .border-t-\[10px\]{
   border-top-width:10px;
 }
@@ -1957,8 +1961,23 @@ body.scrolling-down header#header {
   border-color:rgb(156 163 175 / var(--tw-border-opacity));
 }
 
+.border-primary-dark{
+  --tw-border-opacity:1;
+  border-color:rgb(2 48 71 / var(--tw-border-opacity));
+}
+
 .border-transparent{
   border-color:transparent;
+}
+
+.border-t-primary-dark{
+  --tw-border-opacity:1;
+  border-top-color:rgb(2 48 71 / var(--tw-border-opacity));
+}
+
+.border-t-primary{
+  --tw-border-opacity:1;
+  border-top-color:rgb(33 158 188 / var(--tw-border-opacity));
 }
 
 .bg-accent{
