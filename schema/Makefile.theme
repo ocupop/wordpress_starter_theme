@@ -1,5 +1,5 @@
 theme-init:
-	@echo "\033[0;32mINSTALL SOME PLUGINS.\033[0m"
+	@echo "##### INSTALL SOME PLUGINS. ####"
 	wp plugin install advanced-custom-fields --activate
 	wp plugin install better-search-replace --activate
 	wp plugin install broken-link-checker --activate
