@@ -37,16 +37,14 @@
             wp_nav_menu(
                 array(
                 'theme_location' => 'primary-nav',
-                'container' => 'primary-nav',
-                'walker' => new Ocupop_Nav_Menu()
+                'container' => 'primary-nav'
                 )
             );
 
             wp_nav_menu(
                 array(
                 'theme_location' => 'utility-nav',
-                'container' => 'utility-nav',
-                'walker' => new Ocupop_Nav_Menu()
+                'container' => 'utility-nav'
                 )
             );
             ?>
