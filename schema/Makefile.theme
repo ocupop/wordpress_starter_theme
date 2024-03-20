@@ -24,4 +24,3 @@ theme-init:
 
 	wp theme delete twentytwentytwo
 	wp theme delete twentytwentythree
-
