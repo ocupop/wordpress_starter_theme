@@ -8,7 +8,7 @@
 'use strict';
 class DisclosureNav {
   constructor(domNode) {
-    console.log("init")
+    console.log("init top nav")
     this.rootNode = domNode;
     this.timers = [];
     this.controlledNodes = [];

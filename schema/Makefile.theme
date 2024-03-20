@@ -18,7 +18,7 @@ theme-init:
 	wp plugin install wordpress-seo
 
 	wp plugin delete hello
-	wp plugin delete askimet
+	wp plugin delete akismet
 
 	wp theme install twentytwentyfour
 
