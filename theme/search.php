@@ -2,9 +2,9 @@
   get_header();
 ?>
 
-<main class="main pt-0 pb-0" id="main">
+<main class="pt-0 pb-0 main" id="main">
 
-  <section class="bg-primary-light">
+  <section class="bg-primary">
     <div class="container">
       <p>The search results page template can be found at theme/search.php. If your site does not have a search you can delete search.php and searchform.php</p>
 
@@ -49,17 +49,17 @@
     <?php
       if ( have_posts() ) {
         ?>
-        <article class="mb-4 flex gap-8" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+        <article class="flex gap-8 mb-4" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-          <figure class="post-thumbnail w-64">
+          <figure class="w-64 post-thumbnail">
             <a class="post-thumbnail-inner" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
               <?php echo get_the_post_thumbnail( null, 'medium' ,array( 'class' => 'w-full h-auto' ) ); ?>
             </a>
           </figure>
 
-          <div class="entry-content flex-1">
+          <div class="flex-1 entry-content">
             <?php
-            the_title( sprintf( '<h2 class="entry-title text-xl mt-0"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
+            the_title( sprintf( '<h2 class="mt-0 text-xl entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
 
             the_excerpt();
 
@@ -83,7 +83,7 @@
     ?>
   </section>
 
-  <section class="bg-secondary-light mb-0">
+  <section class="mb-0 bg-secondary">
       <div class='container'>
         <p>Here is a search form for testing the search functionality</p>
         <?php get_search_form(); ?>

@@ -31,349 +31,343 @@ $accordion_content = [
     </div>
 
 
-    <section class="bg-light py-8">
-      <div class="container">
+    <div class="divider divider-accent">Buttons</div>
+<section class="container">
 
+  <div class="grid grid-cols-2 gap-2 my-8 md:grid-cols-4">
+    <button class="btn">Default</button>
+    <button class="btn btn-primary">btn-primary</button>
+    <button class="btn btn-secondary">btn-secondary</button>
+    <button class="btn btn-accent">btn-accent</button>
+    <button class="btn btn-info">btn-info</button>
+    <button class="btn btn-success">btn-success</button>
+    <button class="btn btn-warning">btn-warning</button>
+    <button class="btn btn-error">btn-error</button>
+  </div>
+  <div class="grid grid-cols-2 gap-2 my-8 md:grid-cols-4">
+    <button class="btn btn-outline">btn-outline</button>
+    <button class="btn btn-primary btn-outline">btn-outline btn-primary</button>
+    <button class="btn btn-secondary btn-outline">btn-outline btn-secondary</button>
+    <button class="btn btn-accent btn-outline">btn-outline btn-accent</button>
+    <button class="btn btn-info btn-outline">bbtn-outline tn-info</button>
+    <button class="btn btn-success btn-outline">btn-outline btn-success</button>
+    <button class="btn btn-warning btn-outline">btn-outline btn-warning</button>
+    <button class="btn btn-error btn-outline">btn-outline btn-error</button>
+  </div>
+  <div class="grid grid-cols-2 gap-2 my-8 md:grid-cols-5">
+    <button class="btn btn-xs"> btn-xs</button>
+    <button class="btn btn-sm"> btn-sm</button>
+    <button class="btn"> normal</button>
+    <button class="btn btn-lg">btn-lg</button>
+    <button class="btn btn-xl">btn-xl</button>
+  </div>
+  <div class="grid grid-cols-2 gap-2 mt-8 md:grid-cols-4">
+    <button class="btn">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H272V64c0-17.67-14.33-32-32-32h-32c-17.67 0-32 14.33-32 32v144H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h144v144c0 17.67 14.33 32 32 32h32c17.67 0 32-14.33 32-32V304h144c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg>
+      Icon
+    </button>
+    <button class="btn">
+      Icon After
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z"></path></svg>
+    </button>
+    <button class="btn btn-icon">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M488.56 23.44a80 80 0 0 0-113.12 0l-352 352a80 80 0 1 0 113.12 113.12l352-352a80 80 0 0 0 0-113.12zm-49.93 95.19c-19.6 19.59-37.52 22.67-51.93 25.14C373.76 146 364.4 147.6 352 160s-14 21.76-16.23 34.71c-2.48 14.4-5.55 32.33-25.15 51.92s-37.52 22.67-51.92 25.15C245.75 274 236.4 275.6 224 288s-14 21.75-16.23 34.7c-2.47 14.4-5.54 32.33-25.14 51.92s-37.53 22.68-51.93 25.15C117.76 402 108.4 403.6 96 416a16 16 0 0 1-22.63-22.63c19.6-19.59 37.52-22.67 51.92-25.14 13-2.22 22.3-3.82 34.71-16.23s14-21.75 16.22-34.7c2.48-14.4 5.55-32.33 25.15-51.92s37.52-22.67 51.92-25.14c13-2.22 22.3-3.83 34.7-16.23s14-21.76 16.24-34.71c2.47-14.4 5.54-32.33 25.14-51.92s37.52-22.68 51.92-25.15C394.24 110 403.59 108.41 416 96a16 16 0 0 1 22.63 22.63zM31.44 322.18L322.18 31.44l-11.54-11.55c-25-25-63.85-26.66-86.79-3.72L16.17 223.85c-22.94 22.94-21.27 61.79 3.72 86.78zm449.12-132.36L189.82 480.56l11.54 11.55c25 25 63.85 26.66 86.79 3.72l207.68-207.68c22.94-22.94 21.27-61.79-3.72-86.79z"></path></svg>
+    </button>
+  </div>
+</section>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 gap-16">
-          <div>
-            <h3 class="h4">Modal Window</h3>
-            <!-- This wraps the entire modal window -->
-            <div class="mt-6" x-data="{ open: false }">
+<div class="divider divider-accent">Badges</div>
+<section class="container">
+    <div class="grid grid-cols-4 gap-2 my-8 place-items-center lg:grid-cols-8">
+      <span class="badge">badge</span>
+      <span class="badge badge-primary">primary</span>
+      <span class="badge badge-secondary">secondary</span>
+      <span class="badge badge-accent">accent</span>
+      <span class="badge badge-info">info</span>
+      <span class="badge badge-success">success</span>
+      <span class="badge badge-warning">warning</span>
+      <span class="badge badge-error">error</span>
+      <span class="badge badge-outline">badge</span>
+      <span class="badge badge-primary badge-outline">primary</span>
+      <span class="badge badge-secondary badge-outline">secondary</span>
+      <span class="badge badge-accent badge-outline">accent</span>
+      <span class="badge badge-info badge-outline">info</span>
+      <span class="badge badge-success badge-outline">success</span>
+      <span class="badge badge-warning badge-outline">warning</span>
+      <span class="badge badge-error badge-outline">error</span>
+    </div>
+    <div class="grid grid-cols-2 gap-2 my-8 place-items-center md:grid-cols-3">
+      <span class="badge badge-success"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+         Icon Before
+      </span>
+      <span class="badge badge-primary">
+        Icon After
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg>
+      </span>
+      <span class="badge badge-secondary">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M488.56 23.44a80 80 0 0 0-113.12 0l-352 352a80 80 0 1 0 113.12 113.12l352-352a80 80 0 0 0 0-113.12zm-49.93 95.19c-19.6 19.59-37.52 22.67-51.93 25.14C373.76 146 364.4 147.6 352 160s-14 21.76-16.23 34.71c-2.48 14.4-5.55 32.33-25.15 51.92s-37.52 22.67-51.92 25.15C245.75 274 236.4 275.6 224 288s-14 21.75-16.23 34.7c-2.47 14.4-5.54 32.33-25.14 51.92s-37.53 22.68-51.93 25.15C117.76 402 108.4 403.6 96 416a16 16 0 0 1-22.63-22.63c19.6-19.59 37.52-22.67 51.92-25.14 13-2.22 22.3-3.82 34.71-16.23s14-21.75 16.22-34.7c2.48-14.4 5.55-32.33 25.15-51.92s37.52-22.67 51.92-25.14c13-2.22 22.3-3.83 34.7-16.23s14-21.76 16.24-34.71c2.47-14.4 5.54-32.33 25.14-51.92s37.52-22.68 51.92-25.15C394.24 110 403.59 108.41 416 96a16 16 0 0 1 22.63 22.63zM31.44 322.18L322.18 31.44l-11.54-11.55c-25-25-63.85-26.66-86.79-3.72L16.17 223.85c-22.94 22.94-21.27 61.79 3.72 86.78zm449.12-132.36L189.82 480.56l11.54 11.55c25 25 63.85 26.66 86.79 3.72l207.68-207.68c22.94-22.94 21.27-61.79-3.72-86.79z"></path></svg></span><span class="badge badge-success badge-outline"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg> Icon Before</span><span class="badge badge-primary badge-outline"> <!-- -->Icon After <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm144 276c0 6.6-5.4 12-12 12h-92v92c0 6.6-5.4 12-12 12h-56c-6.6 0-12-5.4-12-12v-92h-92c-6.6 0-12-5.4-12-12v-56c0-6.6 5.4-12 12-12h92v-92c0-6.6 5.4-12 12-12h56c6.6 0 12 5.4 12 12v92h92c6.6 0 12 5.4 12 12v56z"></path></svg></span><span class="badge badge-secondary badge-outline"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M488.56 23.44a80 80 0 0 0-113.12 0l-352 352a80 80 0 1 0 113.12 113.12l352-352a80 80 0 0 0 0-113.12zm-49.93 95.19c-19.6 19.59-37.52 22.67-51.93 25.14C373.76 146 364.4 147.6 352 160s-14 21.76-16.23 34.71c-2.48 14.4-5.55 32.33-25.15 51.92s-37.52 22.67-51.92 25.15C245.75 274 236.4 275.6 224 288s-14 21.75-16.23 34.7c-2.47 14.4-5.54 32.33-25.14 51.92s-37.53 22.68-51.93 25.15C117.76 402 108.4 403.6 96 416a16 16 0 0 1-22.63-22.63c19.6-19.59 37.52-22.67 51.92-25.14 13-2.22 22.3-3.82 34.71-16.23s14-21.75 16.22-34.7c2.48-14.4 5.55-32.33 25.15-51.92s37.52-22.67 51.92-25.14c13-2.22 22.3-3.83 34.7-16.23s14-21.76 16.24-34.71c2.47-14.4 5.54-32.33 25.14-51.92s37.52-22.68 51.92-25.15C394.24 110 403.59 108.41 416 96a16 16 0 0 1 22.63 22.63zM31.44 322.18L322.18 31.44l-11.54-11.55c-25-25-63.85-26.66-86.79-3.72L16.17 223.85c-22.94 22.94-21.27 61.79 3.72 86.78zm449.12-132.36L189.82 480.56l11.54 11.55c25 25 63.85 26.66 86.79 3.72l207.68-207.68c22.94-22.94 21.27-61.79-3.72-86.79z"></path></svg>
+      </span>
+    </div>
+ </section>
 
-              <!-- Button -->
-              <button class="btn" @click="open = true" >Open Modal</button>
+<div class="divider divider-accent">Alerts</div>
+<section class="container">
+  <div class="flex flex-col gap-3 mt-8">
+    <div class="alert">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
+      <span>12 unread messages. Tap to see.</span>
+    </div>
+    <div class="alert alert-info">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm0 110c23.196 0 42 18.804 42 42s-18.804 42-42 42-42-18.804-42-42 18.804-42 42-42zm56 254c0 6.627-5.373 12-12 12h-88c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h12v-64h-12c-6.627 0-12-5.373-12-12v-24c0-6.627 5.373-12 12-12h64c6.627 0 12 5.373 12 12v100h12c6.627 0 12 5.373 12 12v24z"></path></svg>
+      <span>New software update available.</span>
+    </div>
+    <div class="alert alert-success">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M504 256c0 136.967-111.033 248-248 248S8 392.967 8 256 119.033 8 256 8s248 111.033 248 248zM227.314 387.314l184-184c6.248-6.248 6.248-16.379 0-22.627l-22.627-22.627c-6.248-6.249-16.379-6.249-22.628 0L216 308.118l-70.059-70.059c-6.248-6.248-16.379-6.248-22.628 0l-22.627 22.627c-6.248 6.248-6.248 16.379 0 22.627l104 104c6.249 6.249 16.379 6.249 22.628.001z"></path></svg>
+      <span>Your purchase has been confirmed!</span>
+    </div>
+    <div class="alert alert-warning">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><g id="Warning"><g><g><path d="M12.5,8.752a.5.5,0,0,0-1,0h0v6a.5.5,0,0,0,1,0Z"></path><circle cx="11.999" cy="16.736" r="0.5"></circle></g><path d="M18.642,20.934H5.385A2.5,2.5,0,0,1,3.163,17.29L9.792,4.421a2.5,2.5,0,0,1,4.444,0L20.865,17.29a2.5,2.5,0,0,1-2.223,3.644ZM12.014,4.065a1.478,1.478,0,0,0-1.334.814L4.052,17.748a1.5,1.5,0,0,0,1.333,2.186H18.642a1.5,1.5,0,0,0,1.334-2.186L13.348,4.879A1.478,1.478,0,0,0,12.014,4.065Z"></path></g></g></svg>
+      <span>Warning: Invalid email address!</span>
+    </div>
+    <div class="alert alert-error">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm101.8-262.2L295.6 256l62.2 62.2c4.7 4.7 4.7 12.3 0 17l-22.6 22.6c-4.7 4.7-12.3 4.7-17 0L256 295.6l-62.2 62.2c-4.7 4.7-12.3 4.7-17 0l-22.6-22.6c-4.7-4.7-4.7-12.3 0-17l62.2-62.2-62.2-62.2c-4.7-4.7-4.7-12.3 0-17l22.6-22.6c4.7-4.7 12.3-4.7 17 0l62.2 62.2 62.2-62.2c4.7-4.7 12.3-4.7 17 0l22.6 22.6c4.7 4.7 4.7 12.3 0 17z"></path></svg>
+      <span>Error! Task failed successfully.</span>
+    </div>
+  </div>
+</section>
 
+<div class="divider divider-accent">Modals</div>
+<section class="container">
+  <button class="btn btn-secondary" onclick="my_modal_2.showModal()">open modal</button>
+  <dialog id="my_modal_2" class="modal">
+    <div class="modal-box">
+      <form method="dialog">
+        <button class="absolute btn btn-sm btn-circle btn-ghost right-2 top-2">✕</button>
+      </form>
+      <h3 class="text-lg font-bold">Hello Modal!</h3>
+      <p class="py-4">Close the modal with the ESC key, the "X" button in the corner, the close button or click outside.</p>
+      <div class="modal-action">
+        <form method="dialog">
+          <button class="btn">Close</button>
+        </form>
+      </div>
+    </div>
+    <form class="modal-backdrop" method="dialog">
+      <button>close</button>
+    </form>
+  </dialog>
+</section>
 
-              <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" x-show="open" x-cloak>
+<div class="divider divider-accent">Expand/Collapse</div>
+<section class="container">
+  <div class="mb-8">
+    <details class="collapse collapse-arrow bg-base-200">
+      <summary class="text-xl font-medium collapse-title">Click to open/close</summary>
+      <div class="collapse-content">
+        <p>content</p>
+      </div>
+    </details>
+  </div>
+  <div>
+    <details class="rounded-md collapse collapse-arrow bg-base-200">
+      <summary class="p-2 text-lg font-medium text-white collapse-title bg-dark !min-h-0">This one has a dark header</summary>
+      <div class="collapse-content">
+        <div class="p-8">content</div>
+      </div>
+    </details>
+  </div>
+</section>
 
-                  <div class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"></div>
-
-                  <div class="fixed z-10 inset-0 overflow-y-auto">
-                    <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
-
-                      <div class="relative bg-white text-center rounded-lg px-4 pt-5 pb-4 overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-sm sm:w-full sm:p-6" @click.away="open = false">
-                        <div>
-
-                          <div class="mt-3 text-center sm:mt-5">
-                            <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Hello Modal!</h3>
-                            <div class="mt-2">
-                              <p class="text-sm text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
-                            </div>
-                          </div>
-                        </div>
-                        <button @click="open = false" class="btn">
-                          Close this modal!
-                        </button>
-                      </div>
-                      <!-- END Modal panel -->
-                    </div>
-                  </div>
-              </div>
-            </div><!-- END modal window wrapper -->
-          </div>
-
-          <div>
-            <h3 class="h4">Modal with Transitions</h2>
-            <!-- This wraps the entire modal window -->
-            <div class="mt-6" x-data="{ open: false }">
-
-              <!-- Button -->
-              <button class="btn" @click="open = true" >Open Modal</button>
-
-
-              <div class="relative z-10" aria-labelledby="modal-title" role="dialog" aria-modal="true" x-show="open" x-cloak>
-
-                <div
-                  class="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity"
-                  x-show="open"
-                  x-transition:enter="ease-out duration-300"
-                  x-transition:enter-start="opacity-0 "
-                  x-transition:enter-end="opacity-100"
-                  x-transition:leave="ease-in duration-200 "
-                  x-transition:leave-start="opacity-100"
-                  x-transition:leave-end="opacity-0"
-                  ></div>
-
-                <div class="fixed z-10 inset-0 overflow-y-auto">
-                  <div class="flex items-end sm:items-center justify-center min-h-full p-4 text-center sm:p-0">
-                    <div
-                      class="relative bg-white rounded-lg px-4 pt-5 pb-4 text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:max-w-sm sm:w-full sm:p-6"
-                      @click.away="open = false"
-                      x-show="open"
-                      x-transition:enter="transition ease-out duration-300"
-                      x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                      x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
-                      x-transition:leave="transition ease-in duration-200"
-                      x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
-                      x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                      >
-                      <div>
-
-                        <!-- Checkbox icon -->
-                        <div class="mx-auto flex items-center justify-center h-12 w-12 rounded-full bg-green-300">
-                          <svg class="h-6 w-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                          </svg>
-                        </div>
-
-                        <div class="mt-3 text-center sm:mt-5">
-                          <h3 class="text-lg leading-6 font-medium text-gray-900" id="modal-title">Hello Modal!</h3>
-                          <div class="mt-2">
-                            <p class="text-sm text-gray-500">This modal should fade and scale in. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur amet labore.</p>
-                          </div>
-                        </div>
-                      </div>
-                      <button @click="open = false" class="btn">
-                        Close this modal!
-                      </button>
-                    </div>
-                    <!-- END Modal panel -->
-                  </div>
-                </div>
-              </div>
-            </div><!-- END modal window wrapper -->
-          </div>
-
+<div class="divider divider-accent">Accordion</div>
+<section class="container">
+    <div class="flex flex-col items-center justify-center gap-2">
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="text-xl font-medium collapse-title">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
         </div>
       </div>
-    </section>
-
-    <section class="bg-white py-8">
-      <div class="container">
-
-        <h3 class="h4">Toggle buttons using AlpineJS</h3>
-        <a href="https://tailwindcomponents.com/component/toggle-1">https://tailwindcomponents.com/component/toggle-1</a>
-
-        <div class="mt-6" x-data="{enabled: false}">
-          <label class="flex items-center justify-start ">
-
-            <span class="order-2 text-gray-800 text-sm ml-3">I agree with terms and conditions</span>
-            <button @click="enabled = !enabled" type="button" class="order-1 bg-mid relative inline-flex flex-shrink-0 h-5 w-10 border-2 border-transparent rounded-full cursor-pointer transition-colors ease-in-out duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent" :class="enabled && 'bg-secondary'" role="switch" aria-checked="false">
-                <span class="sr-only">Sleek Toggle</span>
-                <span aria-hidden="true" class="pointer-events-none inline-block h-4 w-4 rounded-full bg-white shadow transform ring-0 transition ease-in-out duration-200" :class="enabled && 'translate-x-5'"></span>
-            </button>
-          </label>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="text-xl font-medium collapse-title">
+          Click to open this one and close others
         </div>
-
-
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
       </div>
-    </section>
+      <div class="collapse bg-base-200">
+        <input type="radio" name="my-accordion-1" />
+        <div class="text-xl font-medium collapse-title">
+          Click to open this one and close others
+        </div>
+        <div class="collapse-content">
+          <p>hello</p>
+        </div>
+      </div>
+    </div>
+ </section>
 
-    <section class="bg-light py-8">
-      <div class="container">
-        <h3 class="h4">Carousel</h3>
-        <?php
 
-        if (wp_script_is( 'swiper', 'enqueued' )) {
-          ?>
-          <!-- Slider main container -->
-          <div class="swiper swiper-example">
-            <div class="swiper-wrapper">
-                <!-- Slides -->
-                <div class="swiper-slide py-20 text-center bg-accent">Slide 1</div>
-                <div class="swiper-slide py-20 text-center bg-primary-light">Slide 2</div>
-                <div class="swiper-slide py-20 text-center bg-secondary">Slide 3</div>
-                <div class="swiper-slide py-20 text-center bg-primary">Slide 4</div>
-                <div class="swiper-slide py-20 text-center bg-error">Slide 5</div>
-                <div class="swiper-slide py-20 text-center bg-primary-dark">Slide 6</div>
-            </div>
-            <div class="swiper-pagination"></div>
+<div class="divider divider-accent">Checks, Radios and Range Pickers</div>
+<section class="container">
+    <div class="flex flex-col gap-3 mt-8 md:flex-row">
+      <div class="md:w-1/2">
+        <div class="flex gap-2 mb-2">
+          <input type="checkbox" class="toggle">
+          <input type="checkbox" class="toggle toggle-primary">
+          <input type="checkbox" class="toggle toggle-secondary">
+          <input type="checkbox" class="toggle toggle-accent">
+        </div>
+        <div class="flex gap-2 mb-2">
+          <input type="checkbox" class="checkbox">
+          <input type="checkbox" class="checkbox checkbox-primary">
+          <input type="checkbox" class="checkbox checkbox-secondary">
+          <input type="checkbox" class="checkbox checkbox-accent">
+        </div>
+        <div class="flex gap-2 mb-2">
+          <input type="radio" class="radio" name="radio-1">
+          <input type="radio" class="radio radio-primary" name="radio-1">
+          <input type="radio" class="radio radio-secondary" name="radio-1">
+          <input type="radio" class="radio radio-accent" name="radio-1">
+        </div>
+      </div>
+      <div class="md:w-1/2">
+        <input type="range" min="0" max="100" class="range range-xs bg-mid-400" value="90">
+        <input type="range" min="0" max="100" class="range range-xs range-primary bg-mid-200" value="70">
+        <input type="range" min="0" max="100" class="range range-xs range-secondary bg-mid-200" value="50">
+        <input type="range" min="0" max="100" class="range range-xs range-accent bg-mid-200" value="40">
+      </div>
+    </div>
+ </section>
 
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+<div class="divider divider-accent">Steps</div>
+<section class="container">
+    <div class="mt-10">
+      <ul class="w-full m-0 steps steps-horizontal">
+        <li class="step step-primary">Step 1</li>
+        <li class="step step-primary">Step 2</li>
+        <li class="step">Step 3</li>
+        <li class="step">Step 4</li>
+      </ul>
+    </div>
+ </section>
 
-            <!-- If we need scrollbar -->
-            <!-- <div class="swiper-scrollbar"></div> -->
+ <div class="divider divider-accent">Icons</div>
+ <section class="container">
+   <p>
+     This starter uses "<a href="https://remixicon.com/icon/twitter-fill" target="_blank">Remixicon</a>" icons. The CSS include can be found in _includes/head.html. Search <a href="https://remixicon.com/icon/twitter-fill" target="_blank">the Remixicon site</a> for a list of available icons and how to implement.
+   </p>
+   <div class="text-4xl">
+     <i class="ri-facebook-circle-fill"></i>
+     <i class="ri-twitter-fill"></i>
+     <i class="ri-linkedin-box-fill"></i>
+     <i class="ri-instagram-fill"></i>
+     <i class="ri-star-fill"></i>
+   </div>
+ </section>
 
-          </div>
 
-          <?php
-        } else {
-          ?>
-            <p class="my-4"><a href="https://swiperjs.com/" target="_blank">Swiper carousel</a> is currently deactivated. To activate, uncomment the "swiper" scripts in theme/library/functions/scripts-and-enqueing.php</p>
-            <p><a href="https://swiperjs.com/get-started" target="_blank">Click here for documentation</a></p>
-          <?php
-        }
+
+ <div class="divider divider-accent">Tiny Slider Carousel</div>
+<section class="container">
+    <div class="overflow-hidden slider-extend-beyond-bounds" role="region" aria-labelledby="carouselheading" aria-roledescription="carousel">
+      <?php
+        if (wp_script_is('tiny-slider', 'enqueued')) {
         ?>
-      </div>
-    </section>
-
-    <section class="bg-white py-8">
-      <div class="container">
-      <h3 class="h4">Expander</h3>
-
-        <div class="bg-white max-w-xl border border-dark">
-          <ul class="shadow-box p-0 list-none">
-
-            <li class="relative border-b border-gray-200 mb-0" x-data="{opened:null}">
-              <button :aria-expanded="opened" aria-controls="expander-content" type="button" class="w-full px-4 py-4 text-left" @click="opened = !opened">
-                <div class="flex items-center justify-between">
-                  <span>Click here to toggle the expander on and off</span>
-                  <span class="icon" :class="opened ? 'opened' : 'closed'" x-html="opened ? '-' : '+'"></span>
-                </div>
-              </button>
-
-              <div id="expander-content" class="relative overflow-hidden transition-all max-h-0 duration-700" x-ref="container1" x-bind:style="opened ? 'max-height: ' + $refs.container1.scrollHeight + 'px' : ''">
-                <div class="p-6">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                  <p>Libero id faucibus nisl tincidunt eget. Augue neque gravida in fermentum et sollicitudin ac orci.</p>
-                  <p>Nunc sed velit dignissim sodales. </p>
-                </div>
-              </div>
-            </li>
-
-
-          </ul>
-        </div>
-    </section>
-
-    <section class="bg-light py-8">
-      <div class="container">
-      <h3 class="h4">Accordion</h3>
-
-        <div class="bg-white max-w-xl border border-dark" x-data="{selected:null}">
-          <ul class="shadow-box pl-0 list-none">
-            <?php
-            for ($i = 0; $i < count($accordion_content); $i++) {
-              ?>
-              <li class="relative border-b border-gray-200 mb-0">
-                <button :aria-expanded="selected === <?php echo esc_attr($i); ?>" aria-controls="accordion-list-<?php echo esc_attr($i); ?>" type="button" class="w-full px-4 py-3 text-left" @click="selected !== <?php echo esc_attr($i); ?> ? selected = <?php echo esc_attr($i); ?> : selected = null">
-                  <div class="flex items-center justify-between">
-                    <span><?php echo esc_html($accordion_content[$i]->title); ?></span>
-                    <span class="icon" :class="selected !== <?php echo esc_attr($i); ?> ? 'closed' : 'opened'" x-html="selected !== <?php echo esc_attr($i); ?> ? '+' : '-'"></span>
-                  </div>
-                </button>
-
-                <div id="accordion-list-<?php echo esc_attr($i); ?>" class="relative overflow-hidden transition-all max-h-0 duration-700" x-ref="container<?php echo esc_attr($i); ?>" x-bind:style="selected == <?php echo esc_attr($i); ?> ? 'max-height: ' + $refs.container<?php echo esc_attr($i); ?>.scrollHeight + 'px' : ''">
-                  <div class="p-6">
-                  <?php echo esc_html($accordion_content[$i]->content); ?>
-                  </div>
-                </div>
-              </li>
-              <?php
-            }
-            ?>
-          </ul>
+        <p>The Tiny Slider javascript is included directly in this page. If you use it for your site you will probably want to move it to it's own javascript file in the lib/scripts directory.</p>
+        <p class="text-sm text-mid"><i>Note: Tiny Slider library is no longer maintained. You may want to use a different carousel library</i></p>
+        <div class="flex tinyslider-example ">
+          <div class="p-10 bg-red-300" role=group aria-roledescription="slide" aria-labelledby="slide-1_heading">
+            <article>
+              <h3 id="slide-1_heading"><a class='leading-3 text-md' href="https://www.smashingmagazine.com/2023/02/guide-building-accessible-carousels/">Accessible Carousels</a></h3>
+              <p>Most carousels come along with usability and accessibility issues. To avoid these issues, this article addresses step-by-step design considerations as well as semantic requirements for carousels to be accessible. </p>
+            </article>
+          </div>
+          <div class="p-10 bg-gray-400" role=group aria-roledescription="slide" aria-labelledby="slide-2_heading">
+            <article>
+              <h3 id="slide-2_heading"><a href="https://www.w3.org/WAI/ARIA/apg/patterns/carousel/">W3C implementing an accessible carousel </a></h3>
+              <p>W3C's Guidance on how to implement an accessible carousel.</p>
+            </article>
+          </div>
+          <div class="p-10 bg-indigo-400" role=group aria-roledescription="slide" aria-labelledby="slide-3_heading">
+            <article>
+              <h3 id="slide-3_heading">Aria Roles on Container</h3>
+              <p>Note that the container element has "ariea-labeldby" which points to the h2 element. If there is not a visible header element you could use the aria-label tag and name the carousel using a string parameter.</p>
+            </article>
+          </div>
+          <div class="p-10 bg-gray-600" role=group aria-roledescription="slide" aria-labelledby="slide-4_heading">
+            <article>
+              <h3 id="slide-4_heading">Aria Roles on Slide</h3>
+              <p>This example uses an HTML5 list. If you are using div elements, you should put "role=group" on each slide</p>
+            </article>
+          </div>
+          <div class="p-10 bg-blue-200" role=group aria-roledescription="slide" aria-label="Slide 5 of 6">
+            <h3 id="slide-4_heading">Aria Label Example</h3>
+            <p>Example of adding aria-label instead of area-labelledby</p>
+          </div>
+          <div class="p-10 bg-gray-600" role=group aria-roledescription="slide" aria-labelledby="slide-6_heading">
+            <article>
+              <h3 id="slide-6_heading">Use List or DIVs?</h3>
+              <p>If you truly hide the slides that are not visible, you should not use list markup for the whole set of slides. Screen readers do announce the number of list items (which may seem helpful) but will ignore hidden ones. Concerning the carousel, list markup would not result in an output of the total number of list items but just the visible ones. If only one slide is visible, that wouldn’t be very helpful.</p>
+            </article>
+          </div>
         </div>
 
-      </div>
-    </section>
-
-
-    <section class="bg-white py-8">
-      <div class="container">
-      <h3 class="h4">Drop Downs</h3>
-
-        <div
-            x-data="{
-                open: false,
-                toggle() {
-                    if (this.open) {
-                        return this.close()
-                    }
-
-                    this.$refs.button.focus()
-
-                    this.open = true
-                },
-                close(focusAfter) {
-                    if (! this.open) return
-
-                    this.open = false
-
-                    focusAfter && focusAfter.focus()
-                }
-            }"
-            x-on:keydown.escape.prevent.stop="close($refs.button)"
-            x-on:focusin.window="! $refs.panel.contains($event.target) && close()"
-            x-id="['dropdown-button']"
-            class="relative"
-        >
-            <!-- Button -->
-            <button
-                x-ref="button"
-                x-on:click="toggle()"
-                :aria-expanded="open"
-                :aria-controls="$id('dropdown-button')"
-                type="button"
-                class="flex items-center gap-2 bg-white px-5 py-2.5 rounded-md shadow"
-            >
-                Options
-
-                <!-- Heroicon: chevron-down -->
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" viewBox="0 0 20 20" fill="currentColor">
-                    <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd" />
-                </svg>
-            </button>
-
-            <!-- Panel -->
-            <div
-                x-ref="panel"
-                x-show="open"
-                x-transition.origin.top.left
-                x-on:click.outside="close($refs.button)"
-                :id="$id('dropdown-button')"
-                style="display: none;"
-                class="absolute left-0 mt-2 w-40 bg-white shadow-md"
-            >
-                <a href="#" class="flex items-center gap-2 px-4 py-2.5 text-left text-sm hover:bg-light disabled:text-gray-500">
-                    New Task
-                </a>
-
-                <a href="#" class="flex items-center gap-2 px-4 py-2.5 text-left text-sm hover:bg-light disabled:text-gray-500">
-                    Edit Task
-                </a>
-
-                <div class="flex items-center gap-2 px-4 py-2.5 text-left text-sm hover:bg-light disabled:text-gray-500">
-                  Not a link
-                </div>
-
-                <a href="#" class="flex items-center gap-2 px-4 py-2.5 text-left text-sm hover:bg-light disabled:text-gray-500">
-                  <span class="text-red-600">Delete Task</span>
-                </a>
-            </div>
+        <div id="custom-controls" role="group" aria-label="Carousel Navigation" tabindex="0" class="flex justify-between mt-3 border">
+            <button class="p-3 bg-blue-200 previous" aria-label="show previous slide">Prev</button>
+            <button class="p-3 bg-blue-200 next" aria-label="show next slide">Next</button>
         </div>
+        <button class="block m-auto auto"></button>
+      <?php } else { ?>
+        <p>Tiny Slider is currently deactivated. To activate, uncomment the "tiny-slider" scripts in theme/library/functions/scripts-and-enqueing.php
+      <?php } ?>
+    </div>
+ </section>
 
-      </div>
-    </section>
-
-
-    <section class="bg-light py-8">
-      <div class="container">
-
-        <h3 class="h4 my-3">Tooltips</h3>
-
-
-        <?php
-        if (wp_script_is( 'alpine-tooltip', 'enqueued' )) {
-            ?>
-                <p>Using alpine-tooltip to display tooltips on hover</p>
-                <p><a href="https://github.com/ryangjchandler/alpine-tooltip" target="_blank">Click here for documentation</a></p>
-
-                <div class="my-4">
-                  <div x-data="{ tooltip: 'This is crazy!' }">
-                    <button x-tooltip="tooltip" class="btn my-4">
-                      Hover for tooltip!
-                    </button>
-                  </div>
-                  <button x-data x-tooltip.raw="Hello, world!" class="btn my-4">
-                      Another Example
-                  </button>
-
-                </div>
-            <?php
-        } else {
-          ?>
-              <p class="my-4">Hover tooltips are currently deactivated. To activate, uncomment the "alpine-tooltop" scripts in theme/library/functions/scripts-and-enqueing.php</p>
-              <p><a href="https://github.com/ryangjchandler/alpine-tooltip" target="_blank">Click here for documentation</a></p>
-          <?php
-        }
+ <div class="divider divider-accent">Swiper Carousel</div>
+  <section>
+    <div class="container">
+      <?php
+      if (wp_script_is('swiper', 'enqueued')) {
         ?>
+        <!-- Slider main container -->
+        <div class="swiper swiper-example">
+          <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="py-20 text-center swiper-slide bg-accent">Slide 1</div>
+              <div class="py-20 text-center swiper-slide bg-primary">Slide 2</div>
+              <div class="py-20 text-center swiper-slide bg-secondary">Slide 3</div>
+              <div class="py-20 text-center swiper-slide bg-primary">Slide 4</div>
+              <div class="py-20 text-center swiper-slide bg-error">Slide 5</div>
+              <div class="py-20 text-center swiper-slide bg-primary-contrast">Slide 6</div>
+          </div>
+          <div class="swiper-pagination"></div>
 
-      </div>
-    </section>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+          <!-- If we need scrollbar -->
+          <!-- <div class="swiper-scrollbar"></div> -->
+
+        </div>
+
+          <?php
+      } else {
+          ?>
+          <p class="my-4"><a href="https://swiperjs.com/" target="_blank">Swiper carousel</a> is currently deactivated. To activate, uncomment the "swiper" scripts in theme/library/functions/scripts-and-enqueing.php</p>
+          <p><a href="https://swiperjs.com/get-started" target="_blank">Click here for documentation</a></p>
+          <?php
+      }
+      ?>
+    </div>
+  </section>
+
+
 
     </main>
 

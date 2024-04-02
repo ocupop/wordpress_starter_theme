@@ -232,7 +232,7 @@ window.addEventListener('load', function () {
 
 
 /** Nav Tabbable */
-document.addEventListener("DOMContentLoaded", (event) => {
+document.addEventListener("DOMContentLoaded", () => {
   // Hide the dropdown when clicking the nav button a second time.
   var focusedButtons = [];
   var navButtons = document.querySelectorAll('.open-on-focus button'); //.link-with-arrow .caratf
@@ -253,6 +253,31 @@ document.addEventListener("DOMContentLoaded", (event) => {
   });
 });
 
+
+/** Open and close mobile menu when hamburger icon is clicked */
+document.addEventListener("DOMContentLoaded", () => {
+  var mainMenu = document.getElementById('header').querySelector('nav');
+  console.log(mainMenu)
+
+  document.getElementById('mobile-menu-toggle').addEventListener('click', function(e) {
+    console.log("Clicked Hamburger",mainMenu)
+    var navWrapper = mainMenu.getElementsByClassName('nav-wrapper')[0]
+    console.log("a",)
+    var toggleBtn = mainMenu.querySelector('#mobile-menu-toggle')
+    console.log("b",navWrapper)
+
+    if(navWrapper.classList.contains('open')){
+      console.log("Remove Open")
+      navWrapper.classList.remove('open');
+      toggleBtn.attr('aria-expanded',false)
+    } else {
+      console.log("Add Open")
+      navWrapper.classList.add('open');
+      toggleBtn.attr('aria-expanded',true)
+    }
+    e.stopImmediatePropagation();
+  }, false);
+})
 
 
 

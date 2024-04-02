@@ -4,5 +4,5 @@ body.admin-bar #header{
 
 #header{
   box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.3);
-  @apply border-0 border-t-[10px] border-solid border-primary-light;
+  @apply border-0 border-t-[10px] border-solid border-primary;
 }

@@ -15,7 +15,7 @@ module.exports = {
 		require('./tailwind-typography.config.js'),
 	],
 	content: [
-		// Ensure changes to PHP files and `theme.json` trigger a rebuild.
+		// Ensure changes to PHP files and css files trigger a rebuild.
 		'./theme/**/*.php',
     './tailwind/**/*.css',
 	],
@@ -29,7 +29,7 @@ module.exports = {
     'pt-0',
     'pb-0',
     'py-0',
-    'translate-x-(0|5|full)'
+    'translate-x-(0|5|full)',
     // {
     //   pattern: /bg-(red|green|blue)-(100|200|300)/,
     //   variants: ['lg', 'hover', 'focus', 'lg:hover'],
@@ -63,28 +63,30 @@ module.exports = {
     },
 		extend: {
       colors: {
-        primary: {
-          DEFAULT: '#219ebc',
-          dark: '#023047',
-          light: '#8ecae6'
+        // Colors not in the default DaisyUI color palette (see Daisyui->themes below).
+        'primary-contrast': 'var(--primary-contrast)',
+        'secondary-contrast': 'var(--secondary-contrast)',
+        'accent-contrast': 'var(--accent-contrast)',
+        danger: 'var(--danger)',
+        white: '#FFFFFF',
+        light: '#EBEBEB',
+        dark: '#333333',
+        black: '#000000',
+        mid: {
+          0: 'var(--mid-0)',
+          100: 'var(--mid-100)',
+          200: 'var(--mid-200)',
+          300: 'var(--mid-300)',
+          400: 'var(--mid-400)',
+          500: 'var(--mid-500)',
+          DEFAULT: '#A3A3A3',
+          600: 'var(--mid-600)',
+          700: 'var(--mid-700)',
+          800: 'var(--mid-800)',
+          900: 'var(--mid-900)',
+          1000: 'var(--mid-1000)'
         },
-        secondary: {
-          DEFAULT: '#fb8500',
-          light: '#ff9560'
-        },
-        // base: '#ffffff',
-        // contrast: '#000000',
-        accent: '#ffb703',
-
-        dark: '#3d3d3d',
-        mid: '#a8a8a8',
-        light: '#CfCfCf',
-        info: '#219ebc',
-        success: '#479f53',
-        warning: '#ffb703',
-        error: '#d4302f',
-
-
+        transparent: 'transparent'
       },
       boxShadow: {
         'filters': '0px 0px 3px #00000029',
@@ -92,7 +94,6 @@ module.exports = {
       aspectRatio: {
         '5/2': '5 / 2',
       },
-
       fontFamily: {
         'sans': ["roboto-condensed, arial, sans-serif"],
         'serif': ["\"Berlingske Serif Regular\",Georgia,serif"],
@@ -104,23 +105,114 @@ module.exports = {
       spacing: {
         '8xl': '96rem',
         '9xl': '128rem',
-      },
-
-    },
-
+      }
+    }
 	},
 	corePlugins: {
 		// Disable Preflight base styles in CSS targeting the editor.
 		preflight: includePreflight,
 	},
-
   darkMode: "class",
+  daisyui: {
 
+    themes: [
+      {
+        light: {
+          ...require('daisyui/src/theming/themes')['[data-theme=light]'],
+          'base-100': 'FFFFFF',
+          'base-content': '#333333',
+          primary: '#67DCE5',
+          secondary: '#FF9560',
+          accent: '#535bf2',
+          neutral: '#A3A3A3',
+          info: '#3ABFF8',
+          success: '#479f53',
+          warning: '#f3cc61',
+          error: '#d4302f',
+
+          // DaisyUI Defaults are just fine for these.
+          // 'base-200': '#EBEBEB', // Will be a darker tone of base-100 if not specified
+          // 'base-300': '#D6D6D6', // Will be a darker tone of base-200 if not specified
+          'primary-content': '#0F5257',
+          'secondary-content': '#7A2900',
+          // 'accent-content': '#000000',
+          // 'neutral-content': '#000000',
+          // 'info-content': '#000000',
+          // 'success-content': '#000000',
+          // 'warning-content': '#000000',
+          // 'error-content': '#ffa3a5',
+
+          /** Colors not in the default daisiUI theme colors */
+          '--danger': '#d4302f',
+          '--primary-contrast': '#27656a',
+          '--secondary-contrast': '#aa3f07',
+          '--accent-contrast': '#0b1181',
+          '--mid-0': '#FFFFFF',
+          '--mid-100': '#F5F5F5',
+          '--mid-200': '#EBEBEB',
+          '--mid-300': '#D6D6D6',
+          '--mid-400': '#C2C2C2',
+          '--mid-500': '#A3A3A3',
+          '--mid-600': '#858585',
+          '--mid-700': '#525252',
+          '--mid-800': '#333333',
+          '--mid-900': '#141414',
+          '--mid-1000': '#000000'
+        },
+        dark: {
+          ...require('daisyui/src/theming/themes')['[data-theme=dark]'],
+          'base-100': '#333333',
+          'base-content': '#EBEBEB',
+          'primary-content': '#0F5257',
+          'secondary-content': '#7A2900',
+          primary: '#67DCE5',
+          secondary: '#FF9560',
+          accent: '#535bf2',
+          neutral: '#A3A3A3',
+          info: '#3ABFF8',
+          success: '#479f53',
+          warning: '#f3cc61',
+          error: '#ff4d58',
+          mid: '#CCCCCC',
+
+          // DaisyUI Defaults are just fine for these.
+          // 'base-200': '#EBEBEB',
+          // 'base-300': '#D6D6D6',
+          // 'primary-content': '#000000',
+          // 'secondary-content': '#000000',
+          // 'accent-content': '#FFFFFF',
+          // 'neutral-content': '#FFFFFF',
+          // 'info-content': '#000000',
+          // 'success-content': '#000000',
+          // 'warning-content': '#000000',
+          // 'error-content': '#6b0002',
+
+          /** Colors not in the default daisiUI theme colors */
+          '--danger': '#ff4d58',
+          '--primary-contrast': '#b6e7eb',
+          '--secondary-contrast': '#f3d0be',
+          '--accent-contrast': '#a4a7e4',
+          '--mid-1000': '#FFFFFF',
+          '--mid-900': '#F5F5F5',
+          '--mid-800': '#EBEBEB',
+          '--mid-700': '#D6D6D6',
+          '--mid-600': '#C2C2C2',
+          '--mid-500': '#A3A3A3',
+          '--mid-400': '#858585',
+          '--mid-300': '#525252',
+          '--mid-200': '#333333',
+          '--mid-100': '#141414',
+          '--mid-0': '#000000'
+        }
+      }
+    ]
+  },
 	plugins: [
 		// Add Tailwind Typography.
 		require('@tailwindcss/typography')({
 			className: typographyClassName,
 		}),
+    require('daisyui')
 
 		// Uncomment below to add additional first-party Tailwind plugins.
 		// require( '@tailwindcss/forms' ),

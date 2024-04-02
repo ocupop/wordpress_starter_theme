@@ -3,8 +3,7 @@
  * plugins, then adds custom base styles.
  */
 
-/* This causes issues because it could override or reset styles set in theme.json, instead, Load a custom reset file here so we have more control */
-/* @import "tailwindcss/base"; */
+@import "tailwindcss/base";
 
 @import "./base/base.css";
 @import-glob "./base/**";

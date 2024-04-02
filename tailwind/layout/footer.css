@@ -3,7 +3,7 @@
   #footer-menu-container{
     @apply list-none p-0 m-0;
     a{
-      @apply text-dark hover:text-primary-dark no-underline;
+      @apply text-dark hover:text-primary-contrast no-underline;
     }
     ul.sub-menu{
       @apply hidden text-sm;
@@ -17,7 +17,7 @@
       li{
         @apply m-0;
         a{
-          @apply text-white hover:text-primary-light;
+          @apply text-white hover:text-primary;
         }
       }
   }

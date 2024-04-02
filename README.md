@@ -4,7 +4,7 @@
 
 ## This theme starter addresses the following requirements: ##
 - uses Tailwind CSS
-- Uses AlpineJS for interactive components
+- Uses DaisyUI for interactive components
 - PostCSS to minimize javascript
 - Inlining critical javascript into the head. Defer load other javascript in footer.
 - Scaffold out some common components such as responsive headers, accessible navigation, dropdowns, alerts, buttons, etc.

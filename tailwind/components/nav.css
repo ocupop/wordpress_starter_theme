@@ -25,7 +25,7 @@
     a {
       @apply text-dark w-full;
       @apply hover:bg-accent focus:bg-accent;
-      @apply focus:outline-4 focus:outline-primary-dark;
+      @apply focus:outline-4 focus:outline-primary-contrast;
     }
     button.nav-link, a {
       font-size:inherit;
@@ -89,7 +89,7 @@
     @apply mobile:block;
   }
   > ul {
-    @apply md:flex items-start;
+    @apply md:flex md:flex-row items-start;
     > li {
       @apply flex flex-col flex-wrap relative justify-between;
       > a{

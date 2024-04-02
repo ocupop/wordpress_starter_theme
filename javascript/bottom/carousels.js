@@ -20,4 +20,37 @@ if (typeof Swiper !== "undefined") {
   });
 }
 
+if (typeof tns !== "undefined") {
+  let tinyslider_example = tns({
+    container: '.tinyslider-example',
+    mouseDrag: true,
+    items: 1,
+    loop: true,
+    arrowKeys: true,
+    freezable: true,
+    autoHeight: true,
+    controls: true,
+    controlsContainer: "#custom-controls",
+    autoplayButton: '.auto',
+    autoplay: true,
+    autoplayText: ['Start', 'Stop'],
+    autoplayHoverPause: true,
+    slideBy: 1,
+    gutter:0,
+    edgePadding:0,
+    nav:true,
+    navPosition:'bottom',
+    responsive: {
+      400: {
+        items: 2
+      },
+      767: {
+        items: 3,
+      },
+      1000: {
+        items: 4,
+      }
+    }
+  });
+}
 

@@ -20,9 +20,9 @@
         </a>
       </div>
 
-      <nav aria-label="Main Menu" x-data="{ mobileMenuOpen: false }" @click.outside="mobileMenuOpen = false" class="inset-x-0 top-0 flex transition disclosure-nav open-on-focus_DISABLED justify-stretch">
+      <nav aria-label="Main Menu" class="inset-x-0 top-0 flex transition disclosure-nav open-on-focus_DISABLED justify-stretch">
 
-        <button :aria-expanded="mobileMenuOpen" type="button" @click="mobileMenuOpen = !mobileMenuOpen" class="relative text-white bg-transparent border-none mobile-menu-toggle md:hidden">
+        <button aria-expanded="false" type="button" class="relative text-white bg-transparent border-none mobile-menu-toggle md:hidden" id="mobile-menu-toggle">
           <span class="sr-only">Toggle main menu</span>
           <div class="space-y-2 hamburger padding-2" >
             <div class="w-8 h-1 bg-gray-600 rounded-full"></div>
@@ -31,7 +31,7 @@
           </div>
         </button>
 
-        <div class="justify-between nav-wrapper" :class="{'open': mobileMenuOpen } ">
+        <div class="justify-between nav-wrapper">
 
           <?php
             wp_nav_menu(

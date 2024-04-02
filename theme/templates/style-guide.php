@@ -12,7 +12,7 @@
       <div class="prose"><?php the_content(); ?></div>
     </div>
 
-    <section class="bg-light py-8">
+    <section class="py-8 bg-light">
       <div class="container">
         <h1>h1 heading or .h1 class</h1>
         <h2>h2 heading or .h2 class</h2>
@@ -25,53 +25,53 @@
     <section class="py-8">
       <div class="container">
         <h2>Colors</h2>
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+        <div class="grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-4">
           <figure>
-            <div class="bg-primary p-12"></div>
+            <div class="p-12 bg-primary"></div>
             <figcaption>Primary</figcaption>
           </figure>
           <figure>
-            <div class="bg-primary-light p-12"></div>
+            <div class="p-12 bg-primary"></div>
             <figcaption>Primary Light</figcaption>
           </figure>
           <figure>
-            <div class="bg-primary-dark p-12"></div>
+            <div class="p-12 bg-primary-contrast"></div>
             <figcaption>Primary Dark</figcaption>
           </figure>
           <figure>
-            <div class="bg-secondary p-12"></div>
+            <div class="p-12 bg-secondary"></div>
             <figcaption>Secondary</figcaption>
           </figure>
           <figure>
-            <div class="bg-accent p-12"></div>
+            <div class="p-12 bg-accent"></div>
             <figcaption>Accent</figcaption>
           </figure>
           <figure>
-            <div class="bg-dark p-12"></div>
+            <div class="p-12 bg-dark"></div>
             <figcaption>dark</figcaption>
           </figure>
           <figure>
-            <div class="bg-mid p-12"></div>
+            <div class="p-12 bg-mid"></div>
             <figcaption>Mid</figcaption>
           </figure>
           <figure>
-            <div class="bg-light p-12"></div>
+            <div class="p-12 bg-light"></div>
             <figcaption>Light</figcaption>
           </figure>
           <figure>
-            <div class="bg-info p-12"></div>
+            <div class="p-12 bg-info"></div>
             <figcaption>Info</figcaption>
           </figure>
           <figure>
-            <div class="bg-success p-12"></div>
+            <div class="p-12 bg-success"></div>
             <figcaption>Success</figcaption>
           </figure>
           <figure>
-            <div class="bg-warning p-12"></div>
+            <div class="p-12 bg-warning"></div>
             <figcaption>Warning</figcaption>
           </figure>
           <figure>
-            <div class="bg-error p-12"></div>
+            <div class="p-12 bg-error"></div>
             <figcaption>Error</figcaption>
           </figure>
         </div>
@@ -79,7 +79,7 @@
     </section>
 
 
-    <section class="bg-light py-8">
+    <section class="py-8 bg-light">
       <div class="container">
         <h2>Buttons</h2>
         <p>* Requires adding the class "btn" to the element</p>
@@ -96,26 +96,26 @@
       </div>
     </section>
 
-<section class="bg-white py-8">
+<section class="py-8 bg-white">
   <div class="container">
     <h2>Forms</h2>
     <?php echo do_shortcode('[formidable id=2]'); ?>
   </div>
 </section>
 
-    <section class="bg-light py-8">
+    <section class="py-8 bg-light">
       <div class="container">
         <h2>Font Stacks</h2>
 
-        <p class="font-body text-2xl"><b class="font-base-bold">Base Font:</b> The quick brown fox jumps over the lazy dog.</p>
-        <p class="font-display text-2xl"><b>Headline/Display Font:</b> The quick brown fox jumps over the lazy dog.</p>
+        <p class="text-2xl font-body"><b class="font-base-bold">Base Font:</b> The quick brown fox jumps over the lazy dog.</p>
+        <p class="text-2xl font-display"><b>Headline/Display Font:</b> The quick brown fox jumps over the lazy dog.</p>
         <p class="font-serif text-2xl"><b class="font-body-bold">Serif Font:</b> The quick brown fox jumps over the lazy dog.</p>
         <p class="font-sans text-2xl"><b>Sans-Serif Font:</b> The quick brown fox jumps over the lazy dog.</p>
         <p class="font-mono text-2xl"><b>Monospace Font:</b> The quick brown fox jumps over the lazy dog.</p>
       </div>
     </section>
 
-    <section class="bg-white py-8">
+    <section class="py-8 bg-white">
       <div class="container">
         <h2>Text Formatting</h2>
         <ul>
@@ -141,7 +141,7 @@
       </div>
     </section>
 
-    <section class="bg-light py-8">
+    <section class="py-8 bg-light">
       <div class="container">
         <h2>Tailwind Typography with the "prose" class</h2>
         <div class="prose">
@@ -171,21 +171,21 @@
     </section>
 
 
-    <section class="bg-white py-8">
+    <section class="py-8 bg-white">
       <div class="container container__supernarrow ">
-        <p class="bg-red-300 py-8 text-center">Container Super Narrow</p>
+        <p class="py-8 text-center bg-red-300">Container Super Narrow</p>
       </div>
       <div class="container container__narrow ">
-        <p class="bg-blue-300 py-8 text-center">Container Narrow</p>
+        <p class="py-8 text-center bg-blue-300">Container Narrow</p>
       </div>
       <div class="container ">
-        <p class="bg-green-300 py-8 text-center">Container</p>
+        <p class="py-8 text-center bg-green-300">Container</p>
       </div>
       <div class="container container__wide ">
-        <p class="bg-teal-300 py-8 text-center">Container Wide</p>
+        <p class="py-8 text-center bg-teal-300">Container Wide</p>
       </div>
       <div class="container container__superwide ">
-        <p class="bg-orange-300 py-8 text-center">Container Super Wide</p>
+        <p class="py-8 text-center bg-orange-300">Container Super Wide</p>
       </div>
 
     </section>
