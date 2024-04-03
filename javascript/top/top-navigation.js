@@ -256,7 +256,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /** Open and close mobile menu when hamburger icon is clicked */
 document.addEventListener("DOMContentLoaded", () => {
-  var mainMenu = document.getElementById('header').querySelector('nav');
+  var mainMenu = document.getElementById('pageHeader').querySelector('nav');
   console.log(mainMenu)
 
   document.getElementById('mobile-menu-toggle').addEventListener('click', function(e) {
@@ -264,16 +264,16 @@ document.addEventListener("DOMContentLoaded", () => {
     var navWrapper = mainMenu.getElementsByClassName('nav-wrapper')[0]
     console.log("a",)
     var toggleBtn = mainMenu.querySelector('#mobile-menu-toggle')
-    console.log("b",navWrapper)
+    console.log("b",toggleBtn)
 
     if(navWrapper.classList.contains('open')){
       console.log("Remove Open")
       navWrapper.classList.remove('open');
-      toggleBtn.attr('aria-expanded',false)
+      toggleBtn.ariaExpanded = "false"
     } else {
       console.log("Add Open")
       navWrapper.classList.add('open');
-      toggleBtn.attr('aria-expanded',true)
+      toggleBtn.ariaExpanded = "true"
     }
     e.stopImmediatePropagation();
   }, false);

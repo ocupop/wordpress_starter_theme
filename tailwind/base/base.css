@@ -12,21 +12,21 @@
  * editor.
 */
 
-
-
 html{
-  @apply m-0 p-0 h-full;
+  @apply m-0 p-0;
 }
 
 body{
-	@apply text-black font-body;
-  @apply flex flex-col;
-  @apply m-0 p-0;
-  min-height:100%;
+  min-height: 100vh;
+  @apply flex flex-col font-sans;
+  header{}
+  main{flex:1;}
+  footer{}
+  &.admin-bar{
+    min-height: calc(100vh - 32px) ;
+  }
 }
-main{
-  @apply flex-1;
-}
+;
 
 p{
   @apply my-4;

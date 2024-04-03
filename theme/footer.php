@@ -1,14 +1,14 @@
 <footer id="footer">
 
   <div class="container py-2">
-    <div class="flex flex-row">
+    <div class="flex flex-col sm:flex-row">
       <div class="flex items-center w-full sm:w-1/3 logo">
-        <a href="<?php echo esc_url(get_home_url()); ?>">
+        <a href="<?php echo esc_url(get_home_url()); ?>" class="mx-auto my-4 md:my-0 md:mx-0">
           <img
             src="<?php bloginfo('template_url'); ?>/library/images/logo-horizontal-dark.svg"
             alt="<?php echo esc_url(get_bloginfo('name')); ?>"
-            class="block"
-            height=50
+            class="block h-12"
+            height=48
             priority
           />
         </a>

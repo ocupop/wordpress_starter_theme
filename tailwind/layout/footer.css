@@ -2,13 +2,15 @@
   @apply mt-0 bg-gray-300;
   #footer-menu-container{
     @apply list-none p-0 m-0;
+    li{
+      @apply m-0;
+    }
     a{
       @apply text-dark hover:text-primary-contrast no-underline;
     }
     ul.sub-menu{
       @apply hidden text-sm;
       li{
-
       }
     }
   }

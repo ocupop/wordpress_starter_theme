@@ -36,24 +36,28 @@ module.exports = {
     // },
   ],
 	theme: {
-		container: {
-      padding: {
-        DEFAULT: '1rem',
-        sm: '1rem',
-        lg: '2rem',
-        xl: '3rem',
-      },
-      center: true,
-    },
-    screens: {
-      'xxs': '420px',
-      'xs': '550px',
-      'sm': '640px',
-      'md': '782px',
-      'mobile': {'max': '781px'},
-      'lg': '1024px',
-      'xl': '1280px',
-      '2xl': '1536px',
+		// container: {
+    //   padding: {
+    //     DEFAULT: '1rem',
+    //     sm: '1rem',
+    //     lg: '2rem',
+    //     xl: '3rem',
+    //   },
+    //   center: true,
+    // },
+    fontSize: {
+      xs: '.75rem',
+      tiny: '.875rem',
+      sm: ['.9rem', '20px'],
+      base: ['1rem', '24px'],
+      lg: ['1.25rem', '28px'],
+      xl: ['1.4rem', '32px'],
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': '3rem',
+      '6xl': '4rem',
+      '7xl': '5rem'
     },
     lineHeight: {
       '1': '1em',
@@ -95,17 +99,22 @@ module.exports = {
         '5/2': '5 / 2',
       },
       fontFamily: {
-        'sans': ["roboto-condensed, arial, sans-serif"],
-        'serif': ["\"Berlingske Serif Regular\",Georgia,serif"],
-        'mono': ['ui-monospace', 'SFMono-Regular','monospace'],
-        'display': ["Montserrat,arial,serif"],
-        'body': ["\"Berlingske Serif Regular\",Georgia,serif"],
-        'body-bold': ["\"Berlingske Serif ExtraBold\",Georgia,serif"],
+        sans: ['montserrat', 'Arial', 'sans-serif'],
+        serif: ['Merriweather', 'Georgia', 'serif'],
+        icon: ['remixicon']
       },
       spacing: {
         '8xl': '96rem',
-        '9xl': '128rem',
-      }
+        '9xl': '112rem',
+      },
+      screens: {
+        mobile: { max: '768px' },
+        'sm': '640px',
+        'md': '768px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+      },
     }
 	},
 	corePlugins: {

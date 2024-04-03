@@ -15,6 +15,9 @@ function ocupop_scripts()
     // wp_localize_script( 'main', 'myAjax', array( 'ajaxurl' => admin_url( 'admin-ajax.php' ), 'formsNonce' => wp_create_nonce("ocupop_forms_nonce")));
     wp_enqueue_script('main');
 
+    /** ICONS */
+    wp_enqueue_style('remixicon', 'https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css', array(), OCUPOP_VERSION);
+
     /** SWIPER CAROUSEL - adds about 160k (but hopefully cached from jsdelivr) */
     // wp_enqueue_script('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js', array(), OCUPOP_VERSION, true);
     // wp_enqueue_style('swiper', 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css', array(), OCUPOP_VERSION);

@@ -3,12 +3,23 @@
 <?php if (have_posts() ) { while ( have_posts() ) : the_post(); ?>
     <main class="pt-0 pb-0 main" id="main">
 
-    <section class="p-12 mt-0 bg-secondary">
+    <!-- <section class="p-12 mt-0 bg-secondary">
       <div class="container">
         <?php the_content(); ?>
       </div>
-    </section>
+    </section> -->
 
+
+    <section class="!py-0 bg-secondary">
+      <div class="container py-12 mx-auto text-center lg:py-24 lg:text-left">
+        <div class="lg:w-1/2 xl:pr-16">
+          <?php the_content(); ?>
+        </div>
+      </div>
+      <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+        <?php echo get_the_post_thumbnail(get_the_ID(), 'large', array( 'class' => 'absolute inset-0 object-cover w-full h-full' ) ); ?>
+      </div>
+    </section>
 
 
     <section class="container prose">

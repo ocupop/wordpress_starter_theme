@@ -1,16 +1,19 @@
 /* COLORS, FONTS, PADDING and BORDERS */
 .nav-wrapper{
-  button.nav-link, a {
-    @apply font-serif;
-  }
   &.open{
-    @apply mobile:top-[7.7rem];
+    @apply mobile:top-[4.5rem];
   }
   @apply bg-gray-200 md:bg-white;
   ul{
     @apply pl-0 my-0;
     li{
       @apply mb-0;
+      &.current-menu-item, &.current_page_item, &.current-menu-ancestor, &.current-menu-parent {
+        > a, > button{
+          @apply text-secondary;
+        }
+      }
+
     }
   }
   > ul{
@@ -19,12 +22,12 @@
       border-bottom-style:solid;
     }
     .sub-menu-wrap {
-      @apply bg-white;
+      @apply bg-mid-200 text-mid-800;
       @apply md:shadow-md;
     }
     a {
-      @apply text-dark w-full;
-      @apply hover:bg-accent focus:bg-accent;
+      @apply text-inherit w-full;
+      @apply hover:bg-mid-0;
       @apply focus:outline-4 focus:outline-primary-contrast;
     }
     button.nav-link, a {
@@ -37,19 +40,15 @@
         @apply mobile:pl-12; /* Indent the sub-nav */
       }
     }
-    .arrow{
-      @apply border-none bg-transparent;
-    }
-    button.arrow:hover{
-      @apply bg-gray-400 md:bg-gray-200;
-    }
+
+
     button.nav-link{
       @apply md:pr-0 !important;
     }
     button.nav-link,
     > li > a {
-      @apply text-black no-underline bg-transparent border-none;
-      @apply hover:bg-secondary;
+      @apply text-dark md:text-white no-underline bg-transparent border-none;
+      @apply hover:bg-accent hover:text-white;
     }
     button.nav-link,
     > li > a,
@@ -91,7 +90,7 @@
   > ul {
     @apply md:flex md:flex-row items-start;
     > li {
-      @apply flex flex-col flex-wrap relative justify-between;
+      @apply flex flex-col flex-wrap relative justify-start;
       > a{
         @apply flex-1 block w-auto;
       }
@@ -145,16 +144,22 @@
       }
     }
     .arrow{
-      @apply absolute right-0 m-0 top-[0.9rem];
-
-      @apply w-6 h-6 p-4;
-      @apply bg-no-repeat bg-center;
-      @apply md:-my-4 md:relative md:top-0;
-      background-image: url('data:image/svg+xml,<svg fill="%23000000" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 330 330" xml:space="preserve"><path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/></svg>');
-      background-size: 0.9em;
+      @apply aspect-square w-6 relative rounded-full;
+      @apply border-none bg-transparent;
+      @apply flex justify-center items-center;
+      @apply hover:bg-mid-400 hover:md:bg-mid-200;
+      @apply absolute right-3 md:right-0 top-2 md:top-0;
+      @apply md:relative;
+      &:before{
+        @apply absolute;
+        @apply content-["\ea50"] text-dark md:text-light hover:text-dark;
+        @apply text-3xl font-icon antialiased;
+      }
     }
+
     button.arrow{
       @apply rounded-full ;
+      @apply -ml-3;
       font-size:inherit;
     }
 
@@ -166,7 +171,6 @@
     }
 
     button.nav-link .arrow{
-      @apply mobile:top-4 mobile:p-0 mobile:pr-2;
       pointer-events:none;
     }
   }
@@ -210,7 +214,7 @@
 /* Some styling of individual navigations */
 #menu-primary-nav{
   li{
-    @apply text-lg;
+    /* @apply text-lg; */
   }
 }
 
@@ -238,7 +242,7 @@ ul.footer-nav{
 
 /* Scroll up/down styles */
 .logo img,
-header#header > .container,
+header#pageHeader > .container,
 .nav-wrapper > ul a{ transition:all 0.2s ease-in-out; }
 
 
@@ -246,7 +250,7 @@ body.scrolled{
   .logo img{
     width:50px !important;
   }
-  header#header > .container{
+  header#pageHeader > .container{
     @apply py-0;
   }
   #menu-primary-nav > li > button.nav-link span,
@@ -256,12 +260,12 @@ body.scrolled{
 }
 
 
-header#header {
+header#pageHeader {
   transition: transform 0.5s ease-in-out;
   transform: translateY(0%);
 }
 body.scrolling-down{
-  header#header {
+  header#pageHeader {
     transform: translateY(-100%);
   }
 }
