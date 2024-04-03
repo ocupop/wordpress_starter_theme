@@ -59,7 +59,6 @@ $accordion_content = [
       <button class="btn btn-sm"> btn-sm</button>
       <button class="btn"> normal</button>
       <button class="btn btn-lg">btn-lg</button>
-      <button class="btn btn-xl">btn-xl</button>
     </div>
     <div class="grid grid-cols-2 gap-2 mt-8 md:grid-cols-4">
       <button class="btn">
@@ -276,8 +275,8 @@ $accordion_content = [
   <section class="container">
       <div class="overflow-hidden slider-extend-beyond-bounds" role="region" aria-labelledby="carouselheading" aria-roledescription="carousel">
         <?php
-          if (wp_script_is('tiny-slider', 'enqueued')) {
-          ?>
+        if (wp_script_is('tiny-slider', 'enqueued')) {
+            ?>
           <p>The Tiny Slider javascript is included directly in this page. If you use it for your site you will probably want to move it to it's own javascript file in the lib/scripts directory.</p>
           <p class="text-sm text-mid"><i>Note: Tiny Slider library is no longer maintained. You may want to use a different carousel library</i></p>
           <div class="flex tinyslider-example ">
@@ -333,7 +332,7 @@ $accordion_content = [
       <div class="container">
         <?php
         if (wp_script_is('swiper', 'enqueued')) {
-          ?>
+            ?>
           <!-- Slider main container -->
           <div class="swiper swiper-example">
             <div class="swiper-wrapper">
